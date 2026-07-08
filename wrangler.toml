@@ -1,0 +1,21 @@
+name = "planhost"
+main = "src/index.ts"
+compatibility_date = "2025-07-05"
+workers_dev = true
+preview_urls = false
+
+[[routes]]
+pattern = "plans.agrimsingh.com"
+custom_domain = true
+
+[[r2_buckets]]
+binding = "PLANS"
+bucket_name = "planhost-plans"
+
+[[kv_namespaces]]
+binding = "META"
+id = "b196b71aced64900aeb95e51148fa0b2"
+
+[vars]
+PUBLIC_BASE_URL = "https://plans.agrimsingh.com"
+GITHUB_ALLOWLIST = "agrimsingh"

@@ -1,0 +1,21 @@
+{
+  "name": "planhost",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "planhost": "./bin/planhost.mjs"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "bootstrap": "bash scripts/bootstrap.sh",
+    "cf-typegen": "wrangler types",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260706.1",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.22.0"
+  }
+}

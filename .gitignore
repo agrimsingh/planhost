@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+.planhost-token
+.DS_Store
+dist/
+*.log
+.env
+.env.*
+!.env.example
+.cursor/hooks/
